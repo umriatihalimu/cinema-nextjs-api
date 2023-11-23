@@ -1,6 +1,6 @@
 // untuk kebutuhan fetch api kita
 
-export const getMangaResponse = async ({ resource, query }) => {
+export const getMangaResponse = async (resource, query) => {
   const response = await fetch(
     //resouce=sumber apa yg dibutuhkan(/top/manga)
     // jika ada querynya maka jalankan

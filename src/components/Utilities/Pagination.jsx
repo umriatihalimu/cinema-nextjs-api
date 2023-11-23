@@ -2,7 +2,7 @@ const Pagination = ({ currentPage, lastPage, setCurrentPage }) => {
   const scrollTop = () => {
     scrollTo({
       behavior: "smooth",
-      top: "top",
+      top: "0",
     });
   };
   const handlePrev = () => {

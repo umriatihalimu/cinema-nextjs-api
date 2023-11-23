@@ -4,17 +4,23 @@ import ListManga from "@/components/MangaList";
 import HeaderTop from "@/components/Utilities/HeaderTop";
 import Pagination from "@/components/Utilities/Pagination";
 import { useEffect, useState } from "react";
+import { getMangaResponse } from "../libs/api-libs";
 
 const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [populerManga, setPopulerManga] = useState([]);
 
   const fetchData = async () => {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/top/manga?page=${currentPage}`
+    // const response = await fetch(
+    //   `${process.env.NEXT_PUBLIC_BASE_URL}/top/manga?page=${currentPage}`
+    // );
+    // const data = await response.json();
+
+    const populerManga = await getMangaResponse(
+      "top/manga",
+      `page=${currentPage}`
     );
-    const data = await response.json();
-    setPopulerManga(data);
+    setPopulerManga(populerManga);
   };
 
   // trigger fethData

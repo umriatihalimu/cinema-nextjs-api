@@ -10,7 +10,7 @@ const Page = async () => {
   // const populerManga = await response.json();
 
   // cara ada file libs:
-  const populerManga = await getMangaResponse(top / manga, (limit = 8));
+  const populerManga = await getMangaResponse("top/manga", "limit=8");
 
   return (
     <>

@@ -1,4 +1,4 @@
-import { getMangaResponse } from "@/app/libs/api-libs";
+import { getMangaResponse } from "@/libs/api-libs";
 import ListManga from "@/components/MangaList";
 import Header from "@/components/MangaList/Header";
 

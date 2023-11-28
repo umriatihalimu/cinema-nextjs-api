@@ -1,4 +1,4 @@
-import { getMangaResponse } from "@/app/libs/api-libs";
+import { getMangaResponse } from "@/libs/api-libs";
 import Image from "next/image";
 
 const Page = async ({ params: { id } }) => {

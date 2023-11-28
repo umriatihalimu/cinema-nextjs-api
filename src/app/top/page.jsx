@@ -4,7 +4,7 @@ import ListManga from "@/components/MangaList";
 import HeaderTop from "@/components/Utilities/HeaderTop";
 import Pagination from "@/components/Utilities/Pagination";
 import { useEffect, useState } from "react";
-import { getMangaResponse } from "../libs/api-libs";
+import { getMangaResponse } from "../../libs/api-libs";
 
 const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);

@@ -11,8 +11,8 @@ const InputSearch = () => {
     if (e.key === "Enter" || e.type === "click") {
       e.preventDefault();
       const keyword = inputRef.current.value;
-      if (keyword === null || keyword === "") {
-        alert("Tidak ada yg dicari");
+      if (keyword === null || keyword.trim() === "") {
+        return;
       } else {
         router.push(`/search/${keyword}`);
       }
